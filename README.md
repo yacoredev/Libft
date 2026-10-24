@@ -92,7 +92,7 @@ cc main.c -L. -lft -o program
 ./program
 ```
 
-The `main.c` file is an example program that uses the library; it is not part of the library itself.
+The `main.c` file is an example program that uses the library
 
 ## Resources
 
