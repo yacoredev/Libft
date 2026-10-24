@@ -8,7 +8,8 @@ Libft is a C library developed as part of the 42 curriculum. The goal is to reim
 
 The project focuses on understanding memory management, pointers, strings, linked lists, and the behavior of low-level C functions.
 
-The library is compiled into a static archive named `libft.a`.
+> [!NOTE]
+> The library is compiled into a static archive named `libft.a`.
 
 ## Functions
 
@@ -102,9 +103,10 @@ The `main.c` file is an example program that uses the library
 - **GNU Make manual:** https://www.gnu.org/software/make/manual/
 - **Mohamed Yousef:  Data Structure in C** https://www.youtube.com/playlist?list=PLfgCIULRQavxpi-GYpkLt8_sFb2VlT6Zo
 
-### AI Usage
-
-AI was used to clarify C concepts, understand function specifications, and identify potential edge cases during development. The implementation, debugging, and testing were performed by the student.
+> [!TIP]
+> AI Usage
+> 
+> AI was used to clarify C concepts, understand function specifications, and identify potential edge cases during development. The implementation, debugging, and testing were performed by the student.
 
 ## Author
 
