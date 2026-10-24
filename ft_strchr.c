@@ -24,10 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-    printf("%s\n",ft_strchr("abc", 97 + 256));
-    printf("%s\n", strchr("abc", 'a' + 256));
-}
