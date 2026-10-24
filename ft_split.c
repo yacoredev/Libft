@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 07:11:05 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/16 16:07:00 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 08:13:45 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ static size_t	count_words(char const *str, char sep)
 	return (count);
 }
 
-static char	*put_words(char const **s, char c)
+static char	*put_words(char const **s, char c, char **arr, size_t i)
 {
-	char	*str;
+	char		*str;
 	char const	*end;
 
 	while (**s == c)
@@ -50,7 +50,10 @@ static char	*put_words(char const **s, char c)
 		end++;
 	str = ft_substr(*s, 0, end - *s);
 	if (!str)
+	{
+		free_mem(arr, i);
 		return (NULL);
+	}
 	*s = end;
 	return (str);
 }
@@ -72,27 +75,12 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (i < size - 1)
 	{
-		*tmp = put_words(&s, c);
+		*tmp = put_words(&s, c, arr, i);
 		if (!*tmp)
-		{
-			free_mem(arr, i);
 			return (NULL);
-		}
 		tmp++;
 		i++;
 	}
 	*tmp = NULL;
 	return (arr);
 }
-/*
-#include <stdio.h>
-int main(int ac, char **av)
-{
-	(void)ac;
-	char    **re = ft_split(av[1], av[2][0]);
-	if (*re == NULL)
-		printf("NULL\n");
-	for (int i = 0; re[i]; i++)
-		printf("%s\n", re[i]);
-}
-*/

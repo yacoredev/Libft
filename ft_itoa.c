@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 17:11:13 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/16 17:55:28 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 07:46:02 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	ft_diglen(int nbr)
 static char	*convert_tostr(char *buff, long nbr, int size)
 {
 	char	*tmp;
-	int	i;
+	int		i;
 
 	tmp = buff;
 	if (nbr < 0)
@@ -39,7 +39,6 @@ static char	*convert_tostr(char *buff, long nbr, int size)
 		nbr = -nbr;
 		size--;
 	}
-
 	i = size - 1;
 	tmp[i--] = '\0';
 	while (i >= 0)
@@ -54,20 +53,11 @@ static char	*convert_tostr(char *buff, long nbr, int size)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int	size;
+	int		size;
 
 	size = ft_diglen(n) + 1;
 	str = malloc(size * sizeof(char));
 	if (!str)
 		return (NULL);
-	return(convert_tostr(str, n, size));
+	return (convert_tostr(str, n, size));
 }
-/*
-#include <stdio.h>
-int main(int ac, char **av)
-{
-	(void)ac;
-	(void)av;
-	printf("%s\n", ft_itoa(-2147483648));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 08:39:46 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/18 09:21:53 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 08:04:49 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,3 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_rec_putnbr(nbr, fd);
 }
-/*
-#include <fcntl.h>
-#include <limits.h>
-int main()
-{
-	int fd = open("test.txt", O_RDWR);
-	if (fd == -1)
-		return (fd);
-	ft_putnbr_fd(INT_MIN, fd);
-	ft_putchar_fd('\n', fd);
-	close(fd);
-}
-*/

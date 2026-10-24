@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 09:57:34 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/14 09:57:35 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 08:22:22 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char	d[10];
-	printf("%ld\n", ft_strlcpy(d, "hello world", 3));
-	printf("%s\n", d);
-}	
-*/

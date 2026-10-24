@@ -17,14 +17,13 @@ char	*ft_strrchr(const char *s, int c)
 	char	*last_occur;
 
 	last_occur = NULL;
-        while (*s)
-        {
-                if ((unsigned char)*s == (unsigned char)c)
-                        last_occur = (char *)s;
-                s++;
-        }
-        if ((unsigned char)*s == (unsigned char)c)
-                last_occur = (char *)s;
-        return (last_occur);
+	while (*s)
+	{
+		if ((unsigned char)*s == (unsigned char)c)
+			last_occur = (char *)s;
+		s++;
+	}
+	if ((unsigned char)*s == (unsigned char)c)
+		last_occur = (char *)s;
+	return (last_occur);
 }
-

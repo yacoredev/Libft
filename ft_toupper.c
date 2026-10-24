@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 09:58:50 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/14 10:09:25 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 08:20:14 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char s[] = "abcDfG";
-
-	for(int i = 0; s[i]; i++)
-		printf("%c", ft_toupper(s[i]));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 09:54:36 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/15 15:31:58 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 08:22:53 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len_dst + i] = '\0';
 	return (len_src + len_dst);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	// int	dsize = 1;
-	char	d[20] = {0}; 
-	printf("%ld\n", ft_strlcat(d, "hello", 6));
-	printf("%s\n", d);
-}
-*/

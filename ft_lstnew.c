@@ -6,7 +6,7 @@
 /*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 11:25:15 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/18 11:36:31 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/24 07:52:00 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-/*
-#include <stdio.h>
-int 	main()
-{
-	char *str = "hello world";
-	t_list	*node = ft_lstnew(str);
-	
-	printf("%s\n", (char *)node->content);
-}
-*/
