@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yabaadi <yabaadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 11:13:46 by yabaadi           #+#    #+#             */
-/*   Updated: 2026/10/24 08:26:23 by yabaadi          ###   ########.fr       */
+/*   Updated: 2026/10/26 11:04:54 by yabaadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*byte_s2;
 	size_t				i;
 
-	if (s1 == s2 || !n)
+	if (!n || s1 == s2)
 		return (0);
 	byte_s1 = (unsigned char *)s1;
 	byte_s2 = (const unsigned char *)s2;

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yabaadi <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: yabaadi <yabaadi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/24 12:14:25 by yabaadi           #+#    #+#              #
-#    Updated: 2026/10/24 12:14:40 by yabaadi          ###   ########.fr        #
+#    Updated: 2026/10/26 11:06:36 by yabaadi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ $(NAME): $(OBJS)
 	ar crs $(NAME) $(OBJS)
 	
 %.o: %.c libft.h
-	$(CC) $(FLAGS) -c -I . $< -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
